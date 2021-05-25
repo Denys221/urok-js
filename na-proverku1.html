@@ -17,23 +17,32 @@
     let Tf = (9 / 5) * Tc + 32;
     alert(Tf);
 
-   // второе задание
+    // второе задание
 
-    "use strict";
     let name = "Василий";
     let admin = name;
     console.log(admin);
 
-   // третье задание
+    // третье задание
+    // первые две 10 имеют тип namber а третья 10 тип string
+    // два number плюсуются матимат. а sring конкат.
+    let result1 = 10 + 10 + "10";
+    console.log(result1);
 
-    "use strict";
-    10 + 10 + "10";
-    10 + "10" + 10;
-    10 + 10 + + "10";
-    10 / - "";
-    10 / + "2,5";
+    // number + string = string; string + number = string конкат.
+    let result2 = 10 + "10" + 10;
+    console.log(result2);
 
+    // перед string стоит + и приводит к типу number и поетому плюсуються три 10
+    let result3 = 10 + 10 + +"10";
+    console.log(result3);
 
+    // минус перед пустой строкой делает -0 поетому 10 / -0 получиться минус безконечность
+    let result4 = 10 / -"";
+    console.log(result4);
+    // оператор + не перевел строку в число потомучто там запятая вместо точки и поетому NaN
+    let result5 = 10 / +"2,5";
+    console.log(result5);
   </script>
 </body>
 
