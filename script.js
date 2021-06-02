@@ -73,6 +73,8 @@ function mathOperation(arg1, arg2, operation) {
       console.log(plus(arg1, arg2))
       break;
     case "otnimanie":
+
+
       console.log(minus(arg1, arg2))
       break;
     default:
