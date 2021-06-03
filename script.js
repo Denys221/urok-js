@@ -74,10 +74,19 @@ function mathOperation(arg1, arg2, operation) {
       break;
     case "otnimanie":
       console.log(minus(arg1, arg2))
-      break;
-    default:
+      case "delitj":
+        console.log(delenie(arg1, arg2))
+        break;
+        case "mnozenie":
+         console.log(umnozenie(arg1, arg2))
+         
+         break;
+      default:
 
+    }
   }
-}
-mathOperation(4, 5, "dodavanie")
-mathOperation(6, 3, "otnimanie")
+
+  mathOperation(4, 5, "dodavanie");
+  mathOperation(6, 3, "otnimanie");
+  mathOperation(9, 3, "delenie");
+  mathOperation(2, 4, "umnozenie");
